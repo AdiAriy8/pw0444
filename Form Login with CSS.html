@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Login with Eksternal CSS</title>
+
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1 class ="h1">BATIK SOSMED
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin: 5px 8px;">Masuk</button>
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto; margin: 5px 8px;">Daftar</button>
+</h1>
+
+<div id="wrapper">
+	<div id="top-article">
+		<div id="thumbnail-top-article"><img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/21106664_1474119712669337_2420772028814266566_n.jpg?oh=eee4542569ba832d4a16b4e86647e795&oe=5B394A0E"/></div>
+		<div id="body-top-article">
+					<h2>Adi Ariyanto</h2>
+					Nomor Mahasiswa satu enam titik satu satu titik kosong empat empat empat. Qoute : "Success Key adalah kunci kesuksesan"
+					
+		</div>
+	</div>
+
+</div>
+
+<div id="id02" class="modal">
+	<form class="modal-content animate" action="/action_page.php">
+		<div class="imgcontainer">
+			<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/21106664_1474119712669337_2420772028814266566_n.jpg?oh=eee4542569ba832d4a16b4e86647e795&oe=5B394A0E" alt="Avatar" class="avatar">
+			<br>
+			GAK ADA APA APA CUY, BELUM DIBUAT...
+		</div>
+	</form>	
+</div>
+	
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/21106664_1474119712669337_2420772028814266566_n.jpg?oh=eee4542569ba832d4a16b4e86647e795&oe=5B394A0E" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Masuk</button>
+      <label>
+        <input type="checkbox" name="remember"> Ingat Saya!
+      </label>
+    </div>
+  </form>
+</div>
+
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+</script>
+
+</body>
+</html>
